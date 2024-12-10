@@ -1,0 +1,42 @@
+unique_name: sales insights
+object_type: model
+label: sales insights
+metrics:
+  - unique_name: Sales Amount
+relationships:
+  - unique_name: factinternetsales_orderdatekey_to_Date_Day
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    role_play: Order {0}
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: factinternetsales_shipdatekey_to_Date_Day
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - shipdatekey
+    role_play: Ship {0}
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: factinternetsales_orderdatekey_to_Date_Day1
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    role_play: Order {0}
+    to:
+      dimension: Date
+      level: Day1
+  - unique_name: factinternetsales_shipdatekey_to_Date_Day1
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - shipdatekey
+    role_play: Ship {0}
+    to:
+      dimension: Date
+      level: Day1
