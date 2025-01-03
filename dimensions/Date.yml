@@ -46,4 +46,15 @@ level_attributes:
       - week
     name_column: week_name
     time_unit: week
+calculation_groups:
+  - unique_name: Last Year
+    label: Calculation Group Last Year
+    description: none
+    folder: Calculated Groups
+    calculated_members:
+      - unique_name: Current
+        expression: ([Date].CurrentMember, [Measures].currentMember)
+      - unique_name: Last Year
+        format: fixed
+        expression: (ParallelPeriod([Date].[Date Hierarchy].[Year], 1, [Date].[Date Hierarchy].CurrentMember), [Measures].currentMember)
 type: time
