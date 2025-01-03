@@ -3,6 +3,7 @@ object_type: model
 label: Demo Calc Groups
 metrics:
   - unique_name: Sales Amount
+  - unique_name: Order Quantity
 relationships:
   - unique_name: factinternetsales_orderdatekey_to_Date_Day
     from:
