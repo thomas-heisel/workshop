@@ -1,0 +1,6 @@
+unique_name: con_atscale-sales-demo_as_adventure_hormel
+object_type: connection
+label: con_atscale-sales-demo_as_adventure_hormel
+as_connection: Google BigQuery
+database: atscale-sales-demo
+schema: as_adventure_hormel

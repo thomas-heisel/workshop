@@ -1,0 +1,34 @@
+unique_name: factinternetsales
+object_type: dataset
+label: factinternetsales
+columns:
+  - name: salesordernumber
+    data_type: string
+  - name: salesorderlinenumber
+    data_type: long
+  - name: sales_reasons
+    data_type: string
+  - name: productkey
+    data_type: long
+  - name: product_info
+    data_type: string
+  - name: orderdatekey
+    data_type: long
+  - name: customerkey
+    data_type: long
+  - name: orderquantity
+    data_type: long
+  - name: unitprice
+    data_type: double
+  - name: salesamount
+    data_type: double
+  - name: taxamt
+    data_type: double
+  - name: orderdate
+    data_type: string
+  - name: shipdatekey
+    data_type: long
+  - name: currencykey
+    data_type: long
+connection_id: con_atscale-sales-demo_as_adventure_hormel
+table: factinternetsales
