@@ -1,0 +1,28 @@
+unique_name: hormel
+object_type: model
+label: hormel
+include_default_drillthrough: true
+
+relationships:
+
+  - unique_name: hrlw_invoice_ln_f_Customer
+    from:
+      dataset: hrlw_invoice_ln_f
+      join_columns:
+        - customer_division
+    to:
+      dimension: Customer
+      level: Customer Level
+
+  - unique_name: hrlw_invoice_ln_f_Product
+    from:
+      dataset: hrlw_invoice_ln_f
+      join_columns:
+        - ITEM_NUMBER
+    to:
+      dimension: Product
+      level: Sku Key
+
+metrics:
+
+  - unique_name: m_Amount_sum
